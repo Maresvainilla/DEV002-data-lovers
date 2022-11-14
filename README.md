@@ -36,7 +36,7 @@ al lado derecho.
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+necesita. Cambio
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
