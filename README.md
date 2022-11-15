@@ -16,10 +16,10 @@
 
 ## 1. Preámbulo
 
-hola.Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
+Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+precedentes.holacomoestas1
 
 No obstante, los datos por sí mismos son de poca utilidad. Para que esas
 grandes cantidades de datos se conviertan en **información** fácil de leer para
@@ -36,7 +36,7 @@ al lado derecho.
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita. 
+necesita.
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
