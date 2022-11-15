@@ -19,7 +19,7 @@
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.holacomoestas1
+precedentes.
 
 No obstante, los datos por sí mismos son de poca utilidad. Para que esas
 grandes cantidades de datos se conviertan en **información** fácil de leer para
