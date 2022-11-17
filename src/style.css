@@ -119,3 +119,116 @@ li{
 
     }
 }
+/*contador de pokemones***********************/
+.pokemones-quantity{ 
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1100px;
+    padding: 0em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 270px;
+    border-top: dashed 2px #337f7b;
+}
+.pokemones{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#quantity{
+    color: rgb(201, 39, 11);
+    font-size: 1em;
+}
+#container-card{/**contenedor de card*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    padding: 1em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pokemon-group{
+    box-shadow: 0 0 9px 0 #b1aeae;
+    background-color: #aaaa6f;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.4em;
+    max-width:300px;
+    min-width: 270px;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    flex-basis: 30%;
+    cursor: pointer;
+}
+.poke-name {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    text-align: center;
+    background-color:  #4f6318;
+    border-radius: 0.4em;
+    color: rgb(172, 230, 154);
+    margin: 0.5em;
+}
+.poke-num{
+    margin:0;
+    text-align: left;
+    font-size: 0.8em;
+
+}
+.poke-img{
+    height: 150px;
+    text-align: center;
+}
+
+.container-info {
+    border-left: solid 2px #DDDDDD;
+    font-size: 14px;
+    padding-left: 1em;
+    height: 150px;
+
+}
+.poke-info {
+    font-size: 1em;
+}
+
+.comun img{
+    width: 2.5em;
+}
+.message-error img{
+    width: 15em;
+}
+
+
+/* ---------------Estilos del Modal -------------- */
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:3;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+
+}
+.modal-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-modal{
+	position: relative;
+	background-color: #327ba5;
+    margin: auto;
+    width: 90%;
+    border-radius: 0.4em;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+    animation-duration: 0.5s;
+}
