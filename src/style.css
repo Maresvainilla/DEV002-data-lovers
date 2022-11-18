@@ -1,6 +1,10 @@
 body{
     margin:0 0;
 }
+.CARDSSPACE{
+    background-color: #f2f2f2;   
+
+}
 header{
     margin: 0 0;
     background-color: #021E42;
@@ -168,10 +172,11 @@ li{
 
 }
 
-/*contador de pokemones***********************/
+/* recuadro decontador de pokemones*/
 .pokemones-quantity{ 
     margin-left: auto;
     margin-right: auto;
+    align-self:baseline ;
     max-width:1100px;
     padding: 0em 1em;
     display: flex;
@@ -180,15 +185,15 @@ li{
     min-width: 270px;
     border-top: dashed 2px #337f7b;
 }
-.pokemones{
+.pokemones{  /*letra del contador */
     font-size: 1.5em;
     font-weight: bold;
 }
-#quantity{
+#quantity{   /*numeros del contador  */
     color: rgb(201, 39, 11);
     font-size: 1em;
 }
-#container-card{/**contenedor de card*/
+#container-card{/**CUADRO DE LA TAREJTE */
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
@@ -197,9 +202,9 @@ li{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.pokemon-group{
+.pokemonCharts{   /*CUADRO DE LA TAREJTE */
     box-shadow: 0 0 9px 0 #b1aeae;
-    background-color: #aaaa6f;
+    background-color: #6f8eaa;
     padding: 1em;
     margin: 1em;
     border-radius: 0.4em;
@@ -210,7 +215,7 @@ li{
     flex-basis: 30%;
     cursor: pointer;
 }
-.poke-name {
+.poke-name {     /*COMO luce el nombre el pokemon */
     text-transform: capitalize;
     font-size: 1.2em;
     text-align: center;
@@ -219,34 +224,28 @@ li{
     color: rgb(172, 230, 154);
     margin: 0.5em;
 }
-.poke-num{
+.poke-num{      /*como aparece el numero de ok en tarjeta */
     margin:0;
     text-align: left;
     font-size: 0.8em;
 
 }
-.poke-img{
+.poke-img{     /*tamaño de la imaen de pkms en la tarejta*/
     height: 150px;
     text-align: center;
 }
 
-.container-info {
+.container-info {   /*contenedor de la info */
     border-left: solid 2px #DDDDDD;
     font-size: 14px;
     padding-left: 1em;
     height: 150px;
 
 }
-.poke-info {
+.poke-info {   /*tamaño de la latera de la ingo (generacion etc) */
     font-size: 1em;
 }
 
-.comun img{
-    width: 2.5em;
-}
-.message-error img{
-    width: 15em;
-}
 
 
 /* ---------------Estilos del Modal -------------- */
