@@ -11,7 +11,7 @@ const containerModal = document.querySelector('.container-modal');
 
 /*let users = [
   {firstName : "Susan", lastName: "Steward"},
-  {firstName : "Daniel", lastName: "Longbottom"},
+  {firstName : "Daniel", lastName: "johns"},
   {firstName : "Jacob", lastName: "Black"}
 ];
 
@@ -40,6 +40,7 @@ console.log(userFullnames)*/
         <p class="poke-name">${poks.name}</p>
         <p class="poke-info"> GEN#: ${poks.generation['num']}</p>
         <p class="poke-info"> GEN name: ${poks.generation['name']}</p>
+        
        </div>`;
       
     

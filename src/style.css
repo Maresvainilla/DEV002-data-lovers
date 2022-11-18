@@ -186,6 +186,7 @@ li{
     border-top: dashed 2px #337f7b;
 }
 .pokemones{  /*letra del contador */
+   
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -216,11 +217,11 @@ li{
     cursor: pointer;
 }
 .poke-name {     /*COMO luce el nombre el pokemon */
-    text-transform: capitalize;
+    text-transform: capitalize;  /*Cambiar nombre a mayusculas  */
     font-size: 1.2em;
     text-align: center;
-    background-color:  #4f6318;
-    border-radius: 0.4em;
+    background-color:  #4f6318;  /*recuadro del nombre  */
+    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */
     color: rgb(172, 230, 154);
     margin: 0.5em;
 }
@@ -235,8 +236,8 @@ li{
     text-align: center;
 }
 
-.container-info {   /*contenedor de la info */
-    border-left: solid 2px #DDDDDD;
+.container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
+    border-left: solid 2px #DDDDDD;  /*activar soloel borde del lado iz con color para que se vea dividido*/
     font-size: 14px;
     padding-left: 1em;
     height: 150px;
