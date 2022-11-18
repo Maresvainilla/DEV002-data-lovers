@@ -5,26 +5,9 @@ const containerPokemons = document.querySelector('#container-card');
 const containerModal = document.querySelector('.container-modal');
 
 
+//-----------------------------------------------------
 
-
-
-
-/*let users = [
-  {firstName : "Susan", lastName: "Steward"},
-  {firstName : "Daniel", lastName: "Longbottom"},
-  {firstName : "Jacob", lastName: "Black"}
-];
-
-let userFullnames = users.map(function(element){
-    return `${element.firstName} ${element.lastName}`;
-})
-
-console.log(userFullnames)*/
-
-
-
-
-
+//Historia 1: mostrar pokemones, contador
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
@@ -51,3 +34,6 @@ console.log(userFullnames)*/
 };
 
 tarjetasPokemones(pokemonList); //usar el metodo con la data 
+//-------------------------------------------------------------
+
+//Historia 2
