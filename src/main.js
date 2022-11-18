@@ -5,7 +5,9 @@ const containerPokemons = document.querySelector('#container-card');
 const containerModal = document.querySelector('.container-modal');
 
 
+//-----------------------------------------------------
 
+<<<<<<< HEAD
 
 
 
@@ -25,6 +27,9 @@ console.log(userFullnames)*/
 
 
 
+=======
+//Historia 1: mostrar pokemones, contador
+>>>>>>> 7905f44b4b43b054bd08ba41e711fe70d5b9d940
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
@@ -52,3 +57,6 @@ console.log(userFullnames)*/
 };
 
 tarjetasPokemones(pokemonList); //usar el metodo con la data 
+//-------------------------------------------------------------
+
+//Historia 2
