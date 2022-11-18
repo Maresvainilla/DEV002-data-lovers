@@ -8,52 +8,54 @@
   <body>
     <!---<div id="root"></div>--->
     <header>
-
-      <div class="container">
-        <div class="logo">
-          <h1>POKEDEX GO</h1>
-          <input type="search" id="buscar" class="buscar-pokemon" placeholder="Buscar pokémon" autocomplete="off" spellcheck="false" />
-        </div>
-
-        <div class="filtros">
-
-            <div class="dropdown">
-              <button type="button" >Ordenar</button>
+        <div class="container">
+          <div class="logo">
+            <h1>POKEDEX <span>GO</span></h1>
+            <input type="search" id="buscar" class="buscar-pokemon" placeholder="Buscar pokémon" autocomplete="off" spellcheck="false" />
+          </div>
+  
+          <div class="filtros">
+  
+              <div class="dropdown">
+                <button type="button" >Ordenar</button>
+                  <div class="dropdown-content">
+                    <ul class="list">
+                      <li id="mayor-a-menor">De mayor a menor HP</li>
+                      <li id="menor-a-mayor" >De menor a mayor HP</li>
+                    </ul>  
+                  </div>
+              </div>
+  
+              <div class="dropdown">
+                <button type="button" >Tipos </button>
                 <div class="dropdown-content">
                   <ul class="list">
-                    <li>De mayor a menor HP</li>
-                    <li>De menor a mayor HP</li>
-                  </ul>  
+                      <li value="todos">Todos</li>
+                      <li value="bug">Bug</li>
+                      <li value="dark">Dark</li>
+                      <li value="dragon">Dragon</li>
+                      <li value="electric">Electric</li>
+                      <li value="fairy">Fairy</li>
+                      <li value="fighting">Fighting</li>
+                      <li value="fire">Fire</li>
+                      <li value="ghost">Ghost</li>
+                      <li value="grass">Grass</li>
+                      <li value="ground">Ground</li>
+                      <li value="ice">Ice</li>
+                      <li value="normal">Normal</li>
+                      <li value="poison">Poison</li>
+                      <li value="psychic">Psychic</li>
+                      <li value="rock">Rock</li>
+                      <li value="steel">Steel</li>
+                      <li value="water">Water</li>
+                  </ul>
+                  
                 </div>
+              </div>
             </div>
-
-            <div class="tipo">
-              <label for="tipos" >Tipo </label>
-              <select id="tipos">
-                <option value="todos">Todos</option>
-                <option value="bug">Bug</option>
-                <option value="dark">Dark</option>
-                <option value="dragon">Dragon</option>
-                <option value="electric">Electric</option>
-                <option value="fairy">Fairy</option>
-                <option value="fighting">Fighting</option>
-                <option value="fire">Fire</option>
-                <option value="ghost">Ghost</option>
-                <option value="grass">Grass</option>
-                <option value="ground">Ground</option>
-                <option value="ice">Ice</option>
-                <option value="normal">Normal</option>
-                <option value="poison">Poison</option>
-                <option value="psychic">Psychic</option>
-                <option value="rock">Rock</option>
-                <option value="steel">Steel</option>
-                <option value="water">Water</option>
-              </select>
-            </div>
-          </div>
-
-      </div>
-    </header>
+  
+        </div>
+      </header>
     <main>
       <section class="pokedex">
       <div class="pokemones-quantity">
