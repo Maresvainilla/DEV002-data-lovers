@@ -1,6 +1,7 @@
 body{
     margin:0 0;
 }
+
 header{
     margin: 0 0;
     background-color: #021E42;
@@ -8,6 +9,7 @@ header{
     position: fixed;
     width: 100%;
     min-width: 270px;
+    z-index: 150;
 }
 div, h1, p{
     margin:0 0;
@@ -121,6 +123,179 @@ li{
     align-items: center;
 }
 
+
+
+/* recuadro decontador de pokemones*/
+
+.CARDSSPACE{
+    position:absolute;
+    margin-top: 150px;
+    /*background-color: #f2f2f2;   */
+    z-index: 100;
+
+}
+
+.pokemones-quantity{ 
+    
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    align-self:baseline ;
+    max-width:1100px;
+    padding: 0em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 270px;
+    /*border-top: dashed 2px #337f7b;*/
+    background-color: antiquewhite;
+    width: 100%;
+}
+.pokemones{  /*letra del contador */
+   
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#quantity{   /*numeros del contador  */
+    color: rgb(201, 39, 11);
+    font-size: 1em;
+}
+#container-card{/**CUADRO DE LA TAREJTE */
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1800px;
+    padding: 1em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f2f398;
+}
+.pokemonCharts{   /*CUADRO DE LA TAREJTE */
+   
+    background-color: #f9f9fa;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.4em;
+    max-width:160px;
+    min-width: 330px;
+    display: grid;
+    grid-template-rows: 53% 47%;
+    /*flex-basis: 30%;*/
+    cursor: pointer;
+}
+.poke-name {     /*COMO luce el nombre el pokemon */
+    text-transform: capitalize; 
+    font-size: 1.88em;
+    text-align: center;
+    background-color:  #1c2166;  /*recuadro del nombre  */
+    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */
+    color: rgb(228, 231, 240);
+    margin: 3em;
+   
+}
+.poke-num{      /*como aparece el numero de ok en tarjeta */
+   
+    margin:1em;
+    text-align: left;
+    font-size: 1.2em;
+  
+    background-color:  #1c2166;  /*recuadro del nombre  */
+    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */
+    color: rgb(228, 231, 240);
+  
+   
+ 
+
+
+}
+.poke-img{     /*tamaño de la imaen de pkms en la tarejta*/
+    margin:0;
+    height: 140px;
+    text-align: center;
+    border-top: solid 5px #ec3737;
+    border-left: solid 5px #ec3737;  
+    border-right: solid 5px #ec3737;
+}
+
+.container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
+    border-bottom: solid 5px #ec3737;
+    border-left: solid 5px #ec3737;  
+    border-right: solid 5px #ec3737;
+    font-size: 14px;
+
+    height: 90px;
+
+}
+/*.poke-info {   /*tamaño de la latera de la ingo (generacion etc) 
+    font-size: 1em;
+    
+}*/
+/*arrow top flecha uqe manda hacia arriba despues de scrollear */
+.container-btn-top {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: -83;
+}
+
+.btn-top {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s;
+}
+
+.show {
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.show .btn-top {
+    animation: popup .1s ease-in-out;
+    width: 3em;
+    height: auto;
+    color: #ffffff;
+    z-index: 11;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* ---------------Estilos del Modal -------------- */
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:3;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+
+}
+.modal-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-modal{
+	position: relative;
+	background-color: #327ba5;
+    margin: auto;
+    width: 90%;
+    border-radius: 0.4em;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+    animation-duration: 0.5s;
+}
+
 @media(min-width:470px) {
     div.logo{
         display: flex;
@@ -166,118 +341,4 @@ li{
         font-size: 70px;
 }
 
-}
-
-/*contador de pokemones***********************/
-.pokemones-quantity{ 
-    margin-left: auto;
-    margin-right: auto;
-    max-width:1100px;
-    padding: 0em 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 270px;
-    border-top: dashed 2px #337f7b;
-}
-.pokemones{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-#quantity{
-    color: rgb(201, 39, 11);
-    font-size: 1em;
-}
-#container-card{/**contenedor de card*/
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px;
-    padding: 1em 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.pokemon-group{
-    box-shadow: 0 0 9px 0 #b1aeae;
-    background-color: #aaaa6f;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 0.4em;
-    max-width:300px;
-    min-width: 270px;
-    display: grid;
-    grid-template-columns: 53% 47%;
-    flex-basis: 30%;
-    cursor: pointer;
-}
-.poke-name {
-    text-transform: capitalize;
-    font-size: 1.2em;
-    text-align: center;
-    background-color:  #4f6318;
-    border-radius: 0.4em;
-    color: rgb(172, 230, 154);
-    margin: 0.5em;
-}
-.poke-num{
-    margin:0;
-    text-align: left;
-    font-size: 0.8em;
-
-}
-.poke-img{
-    height: 150px;
-    text-align: center;
-}
-
-.container-info {
-    border-left: solid 2px #DDDDDD;
-    font-size: 14px;
-    padding-left: 1em;
-    height: 150px;
-
-}
-.poke-info {
-    font-size: 1em;
-}
-
-.comun img{
-    width: 2.5em;
-}
-.message-error img{
-    width: 15em;
-}
-
-
-/* ---------------Estilos del Modal -------------- */
-
-.modal{
-	display: none;
-	position: fixed;
-	z-index:3;
-	overflow: auto;
-	left: 0;
-	top:0;
-	width: 100%;
-	height:100%;
-	background: rgba(0, 0, 0, 0.452);
-
-}
-.modal-flex{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-modal{
-	position: relative;
-	background-color: #327ba5;
-    margin: auto;
-    width: 90%;
-    border-radius: 0.4em;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
-	animation-name: modal;
-    animation-duration: 0.5s;
 }
