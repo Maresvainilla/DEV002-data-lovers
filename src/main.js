@@ -28,7 +28,7 @@ const containerModal = document.querySelector('.container-modal');
        //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
     
-    count = 1;
+    count += 1;
     containerPokemons.appendChild(card);
   });
   document.getElementById('quantity').innerHTML = count;
