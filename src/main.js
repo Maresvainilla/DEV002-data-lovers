@@ -2,7 +2,7 @@
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
-const containerModal = document.querySelector('.container-modal');
+//const containerModal = document.querySelector('.container-modal');
 
 
 //-----------------------------------------------------
@@ -28,6 +28,10 @@ const containerModal = document.querySelector('.container-modal');
        //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
     
+       card.addEventListener('click', () => {
+        const mostrar = mostrarModal(poks);
+        mostrar.classList.add('modal');}) 
+
     count = 1;
     containerPokemons.appendChild(card);
   });
