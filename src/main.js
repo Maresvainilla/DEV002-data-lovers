@@ -16,23 +16,24 @@ const containerPokemons = document.querySelector('#container-card');
     const card = document.createElement('div'); //crear elemento div 
     card.className = 'pokemonCharts';
     card.innerHTML = `
-      <div class="poke-img">
+    <div class="cuadroRojo">
+    <div class="poke-img">
         <p class="poke-num">${poks.num}</p>
         <img src="${poks.img}">
-      </div>
+        <div
       <div class="container-info">
         <p class="poke-name">${poks.name}</p>
         
-        
+        </div>
        </div>`;
        //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
-    
+       
        card.addEventListener('click', () => {
         const mostrar = mostrarModal(poks);
         mostrar.classList.add('modal');}) 
 
-    count = 1;
+    count += 1;
     containerPokemons.appendChild(card);
   });
   document.getElementById('quantity').innerHTML = count;
