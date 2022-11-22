@@ -7,8 +7,8 @@ const containerModal = document.querySelector('.container-modal');
 
 //-----------------------------------------------------
 
-//Historia 1
-//1.1: mostrar pokemones, contador
+//Historia 1: mostrar pokemones, contador
+
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
@@ -22,10 +22,11 @@ const containerModal = document.querySelector('.container-modal');
       </div>
       <div class="container-info">
         <p class="poke-name">${poks.name}</p>
-        <p class="poke-info"> GEN#: ${poks.generation['num']}</p>
-        <p class="poke-info"> GEN name: ${poks.generation['name']}</p>
+        
+        
        </div>`;
-      
+       //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
+       //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
     
     count = 1;
     containerPokemons.appendChild(card);
@@ -36,12 +37,21 @@ const containerModal = document.querySelector('.container-modal');
 
 tarjetasPokemones(pokemonList); //usar el metodo con la data 
 
-//1.2 Información pokemon
 
 
-
-
-
-//-------------------------------------------------------------
+//arrow top FLCEHA PARA VOLVER ARRIBA 
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 100) {
+    document.querySelector('.container-btn-top').classList.add('show');
+  } else {
+    document.querySelector('.container-btn-top').classList.remove('show');
+  }
+};
+document.querySelector('.container-btn-top').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 
 //Historia 2
