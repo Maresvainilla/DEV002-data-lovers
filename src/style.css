@@ -265,36 +265,139 @@ li{
 
 /* ---------------Estilos del Modal -------------- */
 
+
+.modal-flex{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    z-index: 380;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+}
+
+.cuadro{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    z-index: 390;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
 .modal{
-	display: none;
 	position: fixed;
-	z-index:3;
-	overflow: auto;
-	left: 0;
-	top:0;
-	width: 100%;
-	height:100%;
-	background: rgba(0, 0, 0, 0.452);
+    background: rgba(0, 0, 0, 0.452);
+	
+    margin: 0;
+    width: 100%;  
+    height: 100vh;  
+    z-index: 350;
+    top: 100px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+	/*animation-name: modal;
+    animation-duration: 0.5s;*/
 
 }
-.modal-flex{
+
+.head-modal{
+    position: absolute;
+    margin:0;
+    top:0;
+    background-color: #021E42;
     width: 100%;
-    height: 100%;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.nombre{
+    color: aliceblue;
+    display: flex;
 
-.container-modal{
-	position: relative;
-	background-color: #327ba5;
-    margin: auto;
-    width: 90%;
-    border-radius: 0.4em;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
-	animation-name: modal;
-    animation-duration: 0.5s;
 }
+.cerrar{
+    display: flex;
+    position: absolute;
+    
+    right: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+.imagen{
+    border: 2px solid hsl(0, 72%, 50%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    height: 100px;
+}
+
+.info{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    position: absolute;
+    top: 60px;
+    left: 54%;
+    width: 50%;
+}
+
+.evolucion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:60%;  
+    width: 100%;
+}
+.sub{
+    margin-bottom: 5px;
+}
+.titulo{
+    position: absolute;
+    padding: 0%;
+    top:0;
+    background-color: #021E42;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.evo1{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 100%;
+}
+
 
 @media(min-width:470px) {
     div.logo{
