@@ -6,9 +6,9 @@ header{
     margin: 0 0;
     background-color: #021E42;
     /* para que header no se mueva con el scroll*/
-    position: absolute;
+    position: fixed;
     width: 100%;
-    min-width: 270px;
+    min-width: 300px;
     z-index: 3;
 }
 div, h1, p{
@@ -139,11 +139,12 @@ li{
 .pokemones-quantity{ 
    
    display: flex;
-    max-width:11px;
+    width: 100vw;
     padding: 0em 1em;
     justify-content: space-between;
     min-width: 270px;
-    background-color: #021E42;
+    background-color: #4d93ee;
+    padding-left: 5vw;
  
 }
 .pokemones{  /*letra del contador */
@@ -161,7 +162,7 @@ li{
 
     margin-left: auto;
     margin-right: auto;
-    margin-top:67px;
+    margin-top:0px;
     max-width: 100%;
     padding: 1em 1em;
     display: flex;
@@ -401,7 +402,8 @@ li{
 }
 
 
-@media(min-width:470px) {
+@media(min-width:490px) {
+
     div.logo{
         display: flex;
         flex-direction: row;
@@ -412,7 +414,9 @@ li{
     padding-left: 10vw;
     padding-right: 10vw;
  }
-   
+   .pokemones-quantity{
+    padding-left: 10vw;
+   }
     .logo h1{
         font-size: 40px;
         
@@ -428,6 +432,10 @@ li{
         color:#465B75;
     }
     
+    .CARDSSPACE{
+        position:absolute;
+        margin-top: 170px;
+    }
 }
 
 @media(min-width:800px) {
@@ -436,5 +444,9 @@ li{
         font-size: 70px;
 }
 
+.CARDSSPACE{
+    position:absolute;
+    margin-top: 210px;
+}
 
 }
