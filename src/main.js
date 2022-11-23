@@ -74,6 +74,8 @@ let size=data.pokemon[0].size.height;
 let nextEvolucion1=data.pokemon[0].evolution['next-evolution'][0]['name'] ;
 */
 
+
+
 //crear un nodo
 
 let modal=document.createElement('div');

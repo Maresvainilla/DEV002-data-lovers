@@ -330,6 +330,8 @@ li{
 .nombre{
     color: aliceblue;
     display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
 
 }
 .cerrar{
@@ -373,9 +375,12 @@ li{
 }
 .sub{
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 .titulo{
     position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
     padding: 0%;
     top:0;
     background-color: #021E42;
