@@ -143,7 +143,7 @@ li{
     padding: 0em 1em;
     justify-content: space-between;
     min-width: 270px;
-    background-color: #4d93ee;
+    background-color: #f2f398;
     padding-left: 5vw;
  
 }
@@ -151,10 +151,10 @@ li{
    
     font-size: 1.5em;
     font-weight: bold;
-    color: #FFFDFD;
+    color: #656565;
 }
 #quantity{   /*numeros del contador  */
-    color:  #f2f398;
+    color:  #656565;
     font-size: 1em;
 }
 #container-card{/**CUADRO DE LA TAREJTE */
@@ -334,6 +334,54 @@ li{
     font-weight: bold;
 
 }
+/*Otro modal------------*/
+.flecha{
+    color: #FFFFFF;
+       
+}
+.otroModal{
+    background-color: #021E42;
+    border-radius: 50%;
+     cursor: pointer;
+     position: absolute;
+     right: 15px;
+    z-index: 250;
+    }
+.modal2{
+    position: absolute;
+    display: none;
+
+}
+.debilidades{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:20%;  
+    width: 100%;
+     
+    margin-left:0 ;
+    left: 0;
+
+}
+
+.deb{
+    text-align: initial;  
+    left: 20px;
+}
+/*----------------------RegresarModal*/
+.anteriorModal{
+    background-color: #021E42;
+    border-radius: 50%;
+     cursor: pointer;
+     position: absolute;
+     left: 15px;
+    z-index: 350;
+    }
+
+/*-----------*/
+
 .cerrar{
     display: flex;
     position: absolute;
