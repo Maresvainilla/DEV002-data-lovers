@@ -9,6 +9,13 @@ const containerPokemons = document.querySelector('#container-card');
 
 //Historia 1: mostrar pokemones, contador
 
+const TypePokemon = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((type) => {
+    imgEachPokemon += `<img src="imagenes/tipoPOK/${type}.png" alt=" type pokemon"/>`;
+  });
+  return imgEachPokemon;
+};
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
@@ -16,15 +23,21 @@ const containerPokemons = document.querySelector('#container-card');
     const card = document.createElement('div'); //crear elemento div 
     card.className = 'pokemonCharts';
     card.innerHTML = `
-    <div class="cuadroRojo">
+    <div class="RedSquare">
+    
     <div class="poke-img">
+    <div class="TypesPoke">${TypePokemon(poks.type)}</div>
         <p class="poke-num">${poks.num}</p>
+       
         <img src="${poks.img}">
+       
         <div
       <div class="container-info">
         <p class="poke-name">${poks.name}</p>
         
+       
         </div>
+       
        </div>`;
        //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
@@ -41,6 +54,8 @@ const containerPokemons = document.querySelector('#container-card');
 };
 
 tarjetasPokemones(pokemonList); //usar el metodo con la data 
+
+
 
 
 
