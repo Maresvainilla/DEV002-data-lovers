@@ -192,7 +192,7 @@ li{
     border: solid 5px #ec3737;
     border-radius: 40px;
     justify-content: center;
-
+  
    
 }
 .poke-num{      /*como aparece el numero de ok en tarjeta */
@@ -212,11 +212,20 @@ li{
     height: 120px;
     width: auto; 
     text-align: center;
+   
     
 }
 .TypesPoke img{
     width: 2.5em;
-    text-align: right;
+    
+}
+.TypesPoke  {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-left: 160px;
+
+   
 }
 .container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
   
