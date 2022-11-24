@@ -12,7 +12,7 @@ const containerPokemons = document.querySelector('#container-card');
 const TypePokemon = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((type) => {
-    imgEachPokemon += `<img src="imagenes/tipoPOK/${type}.png" alt=" type pokemon"/>`;
+    imgEachPokemon += `<img src="imagenes/tipoPOK/${type}.png" />`;
   });
   return imgEachPokemon;
 };
