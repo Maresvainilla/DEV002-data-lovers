@@ -34,7 +34,7 @@ const TypePokemon = (arrayType) => {
         <div class="poke-img">
         <img src="${poks.img}">
         </div>       
-        
+
         <div class="container-info">
           <p class="poke-name">${poks.name}</p>
         </div>
@@ -177,7 +177,7 @@ const modal2=document.createElement('div');
     <div class="debilidades">
       <p class="titulo">Debilidades:</p>
        <div class="deb"> 
-        <p class="sub">${poks.generation.num}</p>
+        
         <p class="sub">${poks.generation.name} </p>
         <p class="sub">Type: ${poks.type[0]} </p>
         <p class="sub">Height: ${poks.size.height} </p>

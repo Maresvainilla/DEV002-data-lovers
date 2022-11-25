@@ -197,7 +197,8 @@ li{
     height: 194px;
     width: 251px;   
     border: solid 5px #ec3737;
-    border-radius: 40px; 
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+        border-radius: 40px; 
     
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -304,35 +305,6 @@ li{
 
 /* ---------------Estilos del Modal -------------- */
 
-
-.modal-flex{
-    position: absolute;
-    width: 250px;
-    height: 350px;
-    z-index: 380;
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    
-    background-color: #FFFFFF;
-    border-radius: 20px;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
-}
-
-.cuadro{
-    position: fixed;
-    width: 300px;
-    height: 400px;
-    z-index: 390;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-
 .modal{
 	position: fixed;
     background: rgba(0, 0, 0, 0.452);
@@ -349,6 +321,37 @@ li{
 	/*animation-name: modal;
     animation-duration: 0.5s;*/
 
+}
+
+.cuadro{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    z-index: 390;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.modal-flex{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    z-index: 380;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
 }
 
 .head-modal{
@@ -377,11 +380,17 @@ li{
 }
 .otroModal{
     background-color: #021E42;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
      cursor: pointer;
      position: absolute;
      right: 15px;
     z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
     }
 .modal2{
     position: absolute;
@@ -403,17 +412,26 @@ li{
 }
 
 .deb{
+    display: flex;
+    flex-direction: column;
     text-align: initial;  
-    left: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 /*----------------------RegresarModal*/
 .anteriorModal{
     background-color: #021E42;
     border-radius: 50%;
+    width: 30px;
+    height: 30px;
      cursor: pointer;
      position: absolute;
+     margin-top: 35px;
      left: 15px;
     z-index: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
 /*-----------*/
@@ -444,8 +462,8 @@ li{
     flex-direction: column;
     text-align: initial;
     position: absolute;
-    top: 60px;
-    left: 54%;
+    top: 45px;
+    left: 50%;
     width: 50%;
 }
 
@@ -460,12 +478,14 @@ li{
 .sub{
     margin-bottom: 5px;
     text-transform: capitalize;
+    font-size: 15px;
 }
 .titulo{
     position: absolute;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0%;
+    margin-bottom: 10px;
     top:0;
     background-color: #021E42;
     color: aliceblue;
