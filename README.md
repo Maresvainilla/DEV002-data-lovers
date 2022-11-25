@@ -44,8 +44,9 @@ Etapa 1 braindump,
 en esta estapa realizamos todas las cosas que un usuario como maestro pokemon, 
 como jugador de pokemon GO y como persona que busca informacion,podria necesitar .
 
-![Alt text](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/ETAPA1hu.png)
 
+
+![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/ETAPA1hu.png)
 
 
 Etapa 2 Eleccion.
