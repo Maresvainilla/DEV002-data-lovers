@@ -185,6 +185,56 @@ li{
     border-radius: 40px;
  
 }
+
+.RedSquare{
+    height: 194px;
+    width: 251px;   
+    border: solid 5px #ec3737;
+    border-radius: 40px;
+    justify-content: center;
+  
+   
+}
+.poke-num{      /*como aparece el numero de ok en tarjeta */
+    text-align: left;
+    font-size: 1.2em;
+    color: rgb(0, 3, 12);
+    font-weight: bolder;
+    display: flex;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.poke-img{     /*tamaño de la imaen de pkms en la tarejta*/
+    margin:0;
+    height: 120px;
+    width: auto; 
+    text-align: center;
+   
+    
+}
+.TypesPoke img{
+    width: 2.5em;
+    
+}
+.TypesPoke  {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-left: 160px;
+
+   
+}
+.container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
+  
+    font-size: 14px;
+
+    height: 75px;
+    width: 50;
+
+}
 .poke-name {     /*COMO luce el nombre el pokemon */
     text-transform: capitalize; 
     font-size: 1.88em;
@@ -199,41 +249,7 @@ li{
     margin-left: 50px;
    
 }
-.poke-num{      /*como aparece el numero de ok en tarjeta */
-    text-align: left;
-    font-size: 1.2em;
-    color: rgb(0, 3, 12);
-    font-weight: bolder;
-    display: flex;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-.cuadroRojo{
-    height: 194px;
-    width: 251px;   
-    border: solid 5px #ec3737;
-    border-radius: 40px;
-    justify-content: center;
 
-   
-}
-.poke-img{     /*tamaño de la imaen de pkms en la tarejta*/
-    margin:0;
-    height: 120px;
-    width: auto; 
-    text-align: center;
-    
-}
-
-.container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
-  
-    font-size: 14px;
-
-    height: 75px;
-    width: 50;
-
-}
 
 .container-btn-top {
     position: fixed;
