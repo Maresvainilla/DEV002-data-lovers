@@ -130,7 +130,6 @@ li{
 .CARDSSPACE{
     position:absolute;
     margin-top: 150px;
-    /*background-color: #f2f2f2;   */
     z-index: 1;
 }
 
@@ -215,19 +214,17 @@ li{
 }
 
 .poke-num{      /*como aparece el numero de ok en tarjeta */
-    text-align: left;
+    
     font-size: 1.2em;
     color: #656565;
     font-weight: bolder;
     margin-left: 15px;
-  /*  display: flex;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 15px;*/
 }
+
 .TypesPoke{
     margin-right: 15px;
 }
+
 .TypesPoke img{
     width: 2.5em;
    
@@ -261,12 +258,7 @@ li{
     width: 80%;
     height: 1.5em;
     font-weight: bold;    
-   /*text-transform: capitalize; 
-    display: flex; 
-    justify-content:center ;
-    margin-left: 50px;
-    margin-top: 15px;*/
-   
+    
 }
 
 /* -------flecha---------------*/
