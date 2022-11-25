@@ -157,6 +157,7 @@ li{
     color:  #656565;
     font-size: 1em;
 }
+
 #container-card{/**CUADRO DE LA TAREJTE */
    
 
@@ -179,74 +180,86 @@ li{
     margin: 1em;
     height: 214px;
     width:278px;  
+
     display:flex;
-    cursor: pointer;
     justify-content: center;
+    align-content: center;
     border-radius: 40px;
- 
+    cursor: pointer;
 }
 
 .RedSquare{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    margin: 0;
+    padding: 0;
     height: 194px;
     width: 251px;   
     border: solid 5px #ec3737;
-    border-radius: 40px;
-    justify-content: center;
-  
+    border-radius: 40px; 
    
+}
+.num-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+
 }
 .poke-num{      /*como aparece el numero de ok en tarjeta */
     text-align: left;
     font-size: 1.2em;
     color: rgb(0, 3, 12);
     font-weight: bolder;
-    display: flex;
+  /*  display: flex;
     position: absolute;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 15px;*/
 }
 
 
 .poke-img{     /*tamaño de la imaen de pkms en la tarejta*/
     margin:0;
-    height: 120px;
+    padding: 0;
+    height: 190px;
+    width: 245px;  
+    /*height: 120px;
     width: auto; 
-    text-align: center;
-   
-    
+    text-align: center; */ 
+
 }
 .TypesPoke img{
     width: 2.5em;
     
 }
 .TypesPoke  {
-    display: flex;
-    position: absolute;
     width: 100%;
-    margin-left: 160px;
+    /*display: flex;
+    position: absolute;
+    margin-left: 160px;*/
 
    
 }
+
 .container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
-  
-    font-size: 14px;
-
-    height: 75px;
-    width: 50;
-
+    width: 90%;
+    background-color:  #1c2166;  /*recuadro del nombre  */
+    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */   
+justify-content: center;
 }
+
 .poke-name {     /*COMO luce el nombre el pokemon */
     text-transform: capitalize; 
-    font-size: 1.88em;
-    text-align: center;
-    background-color:  #1c2166;  /*recuadro del nombre  */
-    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */
+    font-size: 1.3em;
     color: rgb(228, 231, 240);
-    margin-top: 15px;
-    width: 60%; 
-    display: flex; 
+        
+   /* display: flex; 
     justify-content:center ;
     margin-left: 50px;
+    margin-top: 15px;*/
    
 }
 
