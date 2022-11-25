@@ -25,17 +25,20 @@ const TypePokemon = (arrayType) => {
     card.className = 'pokemonCharts';
     card.innerHTML = `
     <div class="RedSquare">
-      <div class="poke-img">
+      
         <div class="num-type">
           <p class="poke-num">${poks.num}</p>
           <div class="TypesPoke">${TypePokemon(poks.type)}</div>
         </div>
+
+        <div class="poke-img">
         <img src="${poks.img}">
-              
+        </div>       
+        
         <div class="container-info">
           <p class="poke-name">${poks.name}</p>
         </div>
-      </div> 
+      
     </div>`;
        //<p class="poke-info"> GEN#: ${poks.generation['num']}</p> opciones para mostrar info 
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
