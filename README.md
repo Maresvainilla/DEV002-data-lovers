@@ -45,7 +45,7 @@ en esta estapa realizamos todas las cosas que un usuario como maestro pokemon,
 como jugador de pokemon GO y como persona que busca informacion,podria necesitar .
 
 
-![](src/imagenes/ETAPA1HU.png)
+![](src/imagenes/ETAPA1hu.png)
 
 
 
