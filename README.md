@@ -46,7 +46,7 @@ como jugador de pokemon GO y como persona que busca informacion,podria necesitar
 
 
 
-![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/ETAPA1hu.png)
+![](src/imagenes/ETAPA1hu.png)
 
 
 Etapa 2 Eleccion.
