@@ -1,4 +1,3 @@
-
 //import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
@@ -108,6 +107,20 @@ const getTypes = (arr) => {
   return types;
 };
 
+/*const getEvolution= function(evo){
+  
+  //evo= Object.keys(poks.evolution[1]);
+
+  if(evo=='next-evolution'){
+    return poks.evolution["next-evolution"][0].name;
+  }
+  if (evo=='pre-evolution'){
+
+    return poks.evolution["pre-evolution"][0].name;
+  }
+};
+*/
+
  modal.innerHTML=
 `<div class="cuadro">
   <div class="modal-flex">
@@ -129,9 +142,9 @@ const getTypes = (arr) => {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-      <p class=sub>Next evolution:${poks.evolution["next-evolution"][0].name||poks.evolution["prev-evolution"][0].name }</p>
-      <p class="sub">Candy:${poks.evolution.candy} </p>
-      <p class="sub">Candy-cost:${poks.evolution["next-evolution"][0]["candy-cost"]||poks.evolution["prev-evolution"][0]["candy-cost"]} </p>
+      <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+      <p class="sub">Candy: ${poks.evolution.candy} </p>
+     
       </div>
     </div>
 
@@ -141,7 +154,7 @@ const getTypes = (arr) => {
   </div>
 </div>`
 modal.className = 'modal'
-
+// <p class="sub">Candy-cost: ${poks.evolution["next-evolution"][0]["candy-cost"]} </p>
 //seleccionar donde se va a poner el nodo - elemento padre
 let elementoPadre=document.querySelector('.container-modal')
 
@@ -166,6 +179,36 @@ window.addEventListener('click', (evento) => {
 modal.querySelector('.otroModal').addEventListener('click', () => {
   
 const modal2=document.createElement('div');
+
+const getInfo = (arr) => {
+  let ataques = '';
+  arr.forEach((eachType) => {
+    ataques += `<li class='lista'>${eachType} </li>`;
+  });
+  return ataques; 
+};
+
+
+const obtainNames = (attack) => {
+  const names = attack.map(name => name.name);
+  return names;
+};
+const obtainTypes = (attack) => {
+  const types = attack.map(type => type.type);
+  return types;
+};
+/*
+const obtainNames = (attack, nombre) => {
+  const names = attack.map(nombre0(nombre));
+  return names;
+};
+
+const nombre0 = (x)=>{
+let nombre1 = x.x
+return nombre1;
+};
+*/
+
   modal2.innerHTML=
 `<div class="cuadro">
   <div class="modal-flex">
@@ -175,22 +218,26 @@ const modal2=document.createElement('div');
     </div>  
      
     <div class="debilidades">
-      <p class="titulo">Debilidades:</p>
-       <div class="deb"> 
-        
-        <p class="sub">${poks.generation.name} </p>
-        <p class="sub">Type: ${poks.type[0]} </p>
-        <p class="sub">Height: ${poks.size.height} </p>
-        <p class="sub">Weight: ${poks.size.weight} </p>
-       </div> 
+      <p class="titulo1">Debilidades:</p> 
+      <div class='debi'>
+       <p >${getInfo(poks.weaknesses)}</p>   
+      </div>     
     </div>
     
-    <div class="evolucion">
+    <div class="resistencia">
+      <p class="titulo1">Resistencia:</p> 
+      <div class='debi'>
+        <p >${getInfo(poks.resistant)}</p>      
+      </div>  
+    </div>
+
+    <div class="ataques">
       <p class=titulo>Ataques</p>
-      <div class="evo1">
-      <p class=sub>Next evolution:${poks.evolution["next-evolution"][0].name||poks.evolution["prev-evolution"][0].name }</p>
-      <p class="sub">Candy:${poks.evolution.candy} </p>
-      <p class="sub">Candy-cost:${poks.evolution["next-evolution"][0]["candy-cost"]||poks.evolution["prev-evolution"][0]["candy-cost"]} </p>
+      <div class='nombreA'>
+      <li class='lista'> <span class='desc'>Name</span> ${getInfo(obtainNames(poks['special-attack']))}</li>
+      </div>
+      <div class='typeA'>
+      <li class='lista'><span class='desc'>Type</span> ${getInfo(obtainTypes(poks['special-attack'])) }</li>
       </div>
     </div>
 
