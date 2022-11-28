@@ -81,10 +81,10 @@ boceto de baja fidelidad,a manera de papel y lpaiz virtual donde como resultado 
 todas las siguientes iteraciones y diferentes pantallas tanto en modo de pantaa de celular
 asi como para Pc.
 
-![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/baja%20cel1.png)
+![](src/imagenes/bajacel1.png)
 
 
-![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/bajapc1.png)
+![](src/imagenes/bajapc1.png)
 
 
 
