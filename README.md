@@ -53,7 +53,7 @@ Etapa 2 Eleccion.
 en la etapa 2 se tomaron decision de las mejores hisotrias de usuario o las mas 
 adecuadas para nuestro proyecto.y quedaron de la siguiente forma:
 
-
+![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/etapa2.png)
 
 
 
@@ -63,79 +63,36 @@ En esta etapa se pidio Feednack a un asesor donde nos oriento para mejorar
 y definir de maneara mas clara ls hisotrias de usuario y quedaron de esta
 forma que es la final.
 
+![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/etapa3.png)
 
 
 
 
 
 
+## 5. Diseño de la Interfaz de Usuario
 
-## 5. Criterios de aceptación mínimos del proyecto
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+En este proyecto se realizaron bocetos(sketches ) de lo que se planeaba implemnetar ,
+utilzando figma de una manear sencilla usando solo lineas y palabras ya que es un 
+boceto de baja fidelidad,a manera de papel y lpaiz virtual donde como resultado obtuvimos
+todas las siguientes iteraciones y diferentes pantallas tanto en modo de pantaa de celular
+asi como para Pc.
+
+
+
+
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
+En este apartado se encuntran los bocetos de alta fidelidad que seria lo ideal para
+nuestra pagina ,siguendo los fundamentos de visual design.Se muestran las diferentes
+pantallas de como se mostraria cada boton e interaccion , ademas se incluye el link de
+Figma ya que el trabajo cuenta con interracion de como reacciona los botnos al darles click.
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
 
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
 
 ### Pruebas unitarias
 
