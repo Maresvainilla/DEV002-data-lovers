@@ -297,6 +297,7 @@ li{
 
 /* ---------------Estilos del Modal -------------- */
 
+/*-----General-----*/
 .modal{
 	position: fixed;
     background: rgba(0, 0, 0, 0.452);
@@ -346,6 +347,20 @@ li{
     
 }
 
+.cerrar{
+    display: flex;
+    position: absolute;
+    
+    right: 10px;
+    color: aliceblue;
+    cursor: pointer;
+   
+}
+
+
+/*-----Modal 1-----*/
+
+/*--elementos--*/
 .head-modal{
     position: absolute;
     margin:0;
@@ -365,78 +380,7 @@ li{
     font-weight: bold;
 
 }
-/*Otro modal------------*/
-.flecha{
-    color: #FFFFFF;
-       
-}
-.otroModal{
-    background-color: #021E42;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-     cursor: pointer;
-     position: absolute;
-     right: 15px;
-    z-index: 250;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-    }
-.modal2{
-    position: absolute;
-    display: none;
 
-}
-.debilidades{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top:20%;  
-    width: 100%;
-     
-    margin-left:0 ;
-    left: 0;
-
-}
-
-.deb{
-    display: flex;
-    flex-direction: column;
-    text-align: initial;  
-    margin-left: 20px;
-    margin-top: 20px;
-}
-/*----------------------RegresarModal*/
-.anteriorModal{
-    background-color: #021E42;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-     cursor: pointer;
-     position: absolute;
-     margin-top: 35px;
-     left: 15px;
-    z-index: 350;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-/*-----------*/
-
-.cerrar{
-    display: flex;
-    position: absolute;
-    
-    right: 10px;
-    color: aliceblue;
-    cursor: pointer;
-    
-}
 .imagen{
     border: 2px solid hsl(0, 72%, 50%);
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
@@ -459,14 +403,16 @@ li{
     width: 50%;
 }
 
+
 .evolucion{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top:60%;  
+    top:57%;  
     width: 100%;
 }
+
 .sub{
     margin-bottom: 5px;
     text-transform: capitalize;
@@ -477,19 +423,21 @@ li{
     text-transform: uppercase;
     font-weight: bold;
     padding: 0%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     top:0;
+    border-radius: 20px;
+    font-size:small;
     background-color: #021E42;
     color: aliceblue;
-    width: 100%;
+    width: 70%;
     height: 40px;
+    left:10%;
    
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
-
 .evo1{
    
     display: flex;
@@ -500,7 +448,158 @@ li{
     top: 50px;
     left: 20px;
     width: 100%;
+    
+    
+    list-style-type: none;
+    text-transform: capitalize;
+    
 }
+
+
+/*--Ir a modal 2- Otro modal--*/
+.flecha{
+    color: #FFFFFF;
+       
+}
+.otroModal{
+    background-color: #054ba7;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     cursor: pointer;
+     position: absolute;
+     right: 5px;
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 58%;
+    }
+
+
+/*------Modal 2-----*/
+
+/*--General--*/
+.modal2{
+    position: absolute;
+    display: none;
+
+}
+
+/*--Elementos--*/
+.debilidades{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:15%;  
+    width: 50%;
+
+    text-align: initial;
+
+    left: 0;
+    
+}
+
+.titulo1{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0%;
+    
+    top:0;
+    border-radius: 20px;
+    background-color: #021E42;
+    font-size:small;
+    color: aliceblue;
+    width: 80%;
+    height: 40px;
+    left:10%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+
+.resistencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:15%;  
+    width: 50%;
+    text-align: initial;
+     
+    left: 50%;  
+}
+
+.debi{
+
+    position: absolute;
+    top:6px;
+    left: 16px;;   
+}
+
+.lista{
+    list-style-type: none;
+    text-transform: capitalize;
+    position: relative;
+    top:35px; 
+    padding-top: 0;
+    padding-bottom: 3px;
+    left:10px;
+    margin-top: 0;
+  border: 1px solid hsl(0, 72%, 50%);
+}
+
+
+
+.ataques{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 57%;
+    left: 20px;
+    width: 100%;
+    text-align: initial;
+    
+}
+
+.desc{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+}
+.nombreA{
+    position: absolute;
+    top:20px;
+    left:0;
+}
+.typeA{
+    position: absolute;
+    top:20px;
+    left:45%;
+}
+/*--RegresarModal--*/
+.anteriorModal{
+    background-color: #054ba7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     cursor: pointer;
+     position: absolute;
+     top: 58%;
+     left: 5px;
+    z-index: 450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 
 @media(min-width:490px) {
