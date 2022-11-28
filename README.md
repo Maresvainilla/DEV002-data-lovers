@@ -53,7 +53,7 @@ Etapa 2 Eleccion.
 en la etapa 2 se tomaron decision de las mejores hisotrias de usuario o las mas 
 adecuadas para nuestro proyecto.y quedaron de la siguiente forma:
 
-![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/etapa2.png)
+![](src/imagenes/etapa2.png)
 
 
 
@@ -63,7 +63,7 @@ En esta etapa se pidio Feednack a un asesor donde nos oriento para mejorar
 y definir de maneara mas clara ls hisotrias de usuario y quedaron de esta
 forma que es la final.
 
-![](../../../../../../../../C:/Users/HP/Desktop/laboratoria/EJERCICIOS/dl3/DEV002-data-lovers/src/imagenes/etapa3.png)
+![](src/imagenes/etapa3.png)
 
 
 
@@ -101,14 +101,6 @@ Figma ya que el trabajo cuenta con interacion de como reacciona los botnes al da
 
 
 
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ## 6. Pruebas unitarias
 En este apartado mostramos las pruebas unitaras del proyecto.
