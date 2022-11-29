@@ -7,9 +7,9 @@
 * [2. Objetivo de la pagina](#2-objetivo-de-la-pagina)
 * [3. Planeación e historias de usuario](#3-Planeación-e-historias-de-usuario)
 * [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
-* [5. Hacker edition](#5-Diseño-de-la-Interfaz-de-Usuario)
-* [6. Consideraciones técnicas](#6-Pruebas-unitarias)
-* [7. Pistas, tips y lecturas complementarias](#7-Resultado-final)
+* [5. Diseño de la Interfaz de Usuario](#5-Diseño-de-la-Interfaz-de-Usuario)
+* [6. Pruebas unitarias](#6-Pruebas-unitarias)
+* [7. Resultado final](#7-Resultado-final)
 * [8. Checklist](#8-checklist)
 
 ***
