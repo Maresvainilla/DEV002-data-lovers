@@ -107,19 +107,30 @@ const getTypes = (arr) => {
   return types;
 };
 
-/*const getEvolution= function(evo){
+// const getEvolution= function(evo){
   
-  //evo= Object.keys(poks.evolution[1]);
+//   evo= Object.keys(poks.evolution[1]);
 
-  if(evo=='next-evolution'){
-    return poks.evolution["next-evolution"][0].name;
-  }
-  if (evo=='pre-evolution'){
+//   if(evo=='next-evolution'){
+//     return poks.evolution.next-evolution.name;
+//   }
+//   if (evo=='pre-evolution'){
 
-    return poks.evolution["pre-evolution"][0].name;
-  }
-};
-*/
+//     return poks.evolution.pre-evolution.name;
+//   }
+// };
+
+
+
+/*if (${poks.evolution["next-evolution"][0]}){
+  return
+  <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+}
+else { 
+  return
+  <p class=sub>Next evolution: ${poks.evolution["pre-evolution"][0].name}</p>
+
+}*/
 
  modal.innerHTML=
 `<div class="cuadro">
@@ -142,7 +153,18 @@ const getTypes = (arr) => {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-      <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+
+      if (${poks.evolution["next-evolution"][0]}){
+        return
+        <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+      }
+      else { 
+        return
+        <p class=sub>Next evolution: ${poks.evolution["pre-evolution"][0].name}</p>
+
+      }
+
+
       <p class="sub">Candy: ${poks.evolution.candy} </p>
      
       </div>
@@ -176,9 +198,13 @@ window.addEventListener('click', (evento) => {
   }
 });
 
+//empieza modal 2 
 modal.querySelector('.otroModal').addEventListener('click', () => {
   
-const modal2=document.createElement('div');
+
+
+
+  const modal2=document.createElement('div');
 
 const getInfo = (arr) => {
   let ataques = '';

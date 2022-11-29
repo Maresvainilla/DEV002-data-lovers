@@ -81,10 +81,16 @@ boceto de baja fidelidad,a manera de papel y lpaiz virtual donde como resultado 
 todas las siguientes iteraciones y diferentes pantallas tanto en modo de pantaa de celular
 asi como para Pc.
 
-![](src/imagenes/bajacel1.png)
+en esta primera imagen se muestran los prototipode baja fidelidad sin feedback
+![](src/imagenes/protoBjacel.png)
 
+![](src/imagenes/protobajapc1.png)
 
-![](src/imagenes/bajapc1.png)
+en estas siguientes imagenes se muestra los prototipos de baja fidelidad con feeedback 
+
+![](src/imagenes/protobajacelular2.png)
+
+![](src/imagenes/protobajapc.png)
 
 
 
@@ -95,12 +101,16 @@ nuestra pagina ,siguendo los fundamentos de visual design.Se muestran las difere
 pantallas de como se mostraria cada boton e interaccion , ademas se incluye el link de
 Figma ya que el trabajo cuenta con interacion de como reacciona los botnes al darles click.
 
+en las siguientes imagenes se muestran los protoitpos de alta fidelidad
 
+![](src/imagenes/Android%20Large%20-%205.png)
 
+![](src/imagenes/MacBook%20Pro%2014_%20-%201.png)
 
-
-
-
+aqui se adjunta el lnik de alta fidelidad para PC 
+https://www.figma.com/file/NOEtt91nIOqkos7V5Ylym8/PROTOTIPO--ALTA-PC?node-id=2%3A5&t=NBKQK9XqjeyLmdEB-1
+aqui se adjunta el lnik de alta fidelidad para celuar que incluye interaccion 
+https://www.figma.com/file/AqhQxBbkhkpQCAjEHUopiw/PROTOTIPO-DE-ALTA--CELULAR?node-id=0%3A1&t=SiiQT2Ecj4DC6sX6-1
 
 ## 6. Pruebas unitarias
 En este apartado mostramos las pruebas unitaras del proyecto.
