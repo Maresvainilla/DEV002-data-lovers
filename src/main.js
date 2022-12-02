@@ -2,8 +2,11 @@
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
-//const containerModal = document.querySelector('.container-modal');
-
+const orderBy = document.querySelector('#order-by');
+import {
+  order,
+  changeOrder,
+} from './data.js';
 
 //-----------------------------------------------------
 
@@ -153,28 +156,17 @@ else {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-
-      if (${poks.evolution["next-evolution"][0]}){
-        return
-        <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
-      }
-      else { 
-        return
-        <p class=sub>Next evolution: ${poks.evolution["pre-evolution"][0].name}</p>
-
-      }
-
-
-      <p class="sub">Candy: ${poks.evolution.candy} </p>
-     
+      <p class=sub>Next evolution:${poks.evolution["next-evolution"][0].name||poks.evolution["prev-evolution"][0].name }</p>
+      <p class="sub">Candy:${poks.evolution.candy} </p>
+      <p class="sub">Candy-cost:${poks.evolution["next-evolution"][0]["candy-cost"]||poks.evolution["prev-evolution"][0]["candy-cost"]} </p>
       </div>
     </div>
-
     <div class="otroModal">
       <p class="flecha"> -> </p>
     </div>
   </div>
 </div>`
+     
 modal.className = 'modal'
 // <p class="sub">Candy-cost: ${poks.evolution["next-evolution"][0]["candy-cost"]} </p>
 //seleccionar donde se va a poner el nodo - elemento padre
@@ -223,17 +215,8 @@ const obtainTypes = (attack) => {
   const types = attack.map(type => type.type);
   return types;
 };
-/*
-const obtainNames = (attack, nombre) => {
-  const names = attack.map(nombre0(nombre));
-  return names;
-};
 
-const nombre0 = (x)=>{
-let nombre1 = x.x
-return nombre1;
-};
-*/
+
 
   modal2.innerHTML=
 `<div class="cuadro">
@@ -305,3 +288,27 @@ return modal;
 
 
 //Historia 2
+orderBy.addEventListener('change', () => {
+  switch (orderBy.value) {
+    case 'num':
+      containerPokemons.innerHTML = '';
+      tarjetasPokemones(order(pokemonList, 'num'));
+      break;
+    case 'cp':
+      containerPokemons.innerHTML = '';
+      // eslint-disable-next-line no-case-declarations
+      const orderCP = order(pokemonList, 'max-cp');
+      tarjetasPokemones(changeOrder(orderCP));
+      console.log(orderCP);
+      break;
+      case 'hM':
+      containerPokemons.innerHTML = '';
+      tarjetasPokemones(order(pokemonList, 'max-hpM'));
+      break;
+    case 'hp':
+      containerPokemons.innerHTML = '';
+      tarjetasPokemones(order(pokemonList, 'max-hp'));
+      break;
+    default:
+  }
+});
