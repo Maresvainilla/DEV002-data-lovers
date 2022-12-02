@@ -3,7 +3,9 @@ import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
 const orderBy = document.querySelector('#order-by');
+
 import {
+  filtros,
   order,
   changeOrder,
 } from './data.js';
@@ -312,3 +314,16 @@ orderBy.addEventListener('change', () => {
     default:
   }
 });
+
+//HU3-Filtros
+let filtro= document.getElementById('lista');
+
+filtro.addEventListener('change', ()=>{
+  if(filtro.value=='todos'){
+    tarjetasPokemones(pokemonList);
+  } else {
+  containerPokemons.innerHTML='';
+   tarjetasPokemones(filtros.filterData(pokemonList,filtro.value));
+    }
+  }
+  )
