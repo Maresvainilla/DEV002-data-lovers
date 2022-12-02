@@ -1,5 +1,5 @@
 
-const filtros = {
+export const filtros = {
     filterData: function(data,condition){
         
         return data.filter(elemento=> elemento.type.includes(condition)
@@ -9,7 +9,7 @@ const filtros = {
     },
 }
 
-export default filtros;
+
 
 
 export const order = (arrayObj, orderBy) => {
