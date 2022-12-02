@@ -1,4 +1,16 @@
 
+const filtros = {
+    filterData: function(data,condition){
+        
+        return data.filter(elemento=> elemento.type.includes(condition)
+
+        )
+
+    },
+}
+
+export default filtros;
+
 
 export const order = (arrayObj, orderBy) => {
     let sortObj = [];
