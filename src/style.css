@@ -142,7 +142,8 @@ li{
 }
 label{
     color: #FFFFFF;
-    padding-left: 15px
+    padding-left: 13px;
+    padding-right:5px;
 }
 .list1{
     background-color: #FFFFFF;
