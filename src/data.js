@@ -1,15 +1,14 @@
      
 
-export const filtros = {
-  filterData: function(data,condition){
+export const filtros = (data,condition)=>{
    
       return data.filter(elemento=> elemento.type.includes(condition)
 
       )
      
-  },
+  }
   
-}
+
 
 
 

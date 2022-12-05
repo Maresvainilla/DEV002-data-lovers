@@ -297,7 +297,7 @@ filtro.addEventListener('change', ()=>{
     tarjetasPokemones(pokemonList);
   } else {
   containerPokemons.innerHTML='';
-   tarjetasPokemones(filtros.filterData(pokemonList,filtro.value));
+   tarjetasPokemones(filtros(pokemonList,filtro.value));
     }
   }
   )
