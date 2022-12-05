@@ -2,12 +2,12 @@
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
-/*const orderBy = document.querySelector('#order-by');*/
+const orderBy = document.querySelector('#order-by');
 
 import {
   filtros,
   order,
-  changeOrder,
+  /**/changeOrder,
 } from './data.js';
 
 //-----------------------------------------------------
@@ -273,18 +273,18 @@ orderBy.addEventListener('change', () => {
     default:
   }
 });
-*/
-let ordenar=document.getElementById('order-by');
 
-ordenar.addEventListener('change', ()=>{
-  if(ordenar.value=='num'){
-    containerPokemons.innerHTML='';
-   return  tarjetasPokemones(pokemonList);
-  } else {
+let ordenar=document.getElementById('order-by');*/
+
+orderBy.addEventListener('change', ()=>{
+ if(orderBy.value=='hpR'){
   containerPokemons.innerHTML='';
-  return tarjetasPokemones(order(pokemonList, ordenar.value));
-    }
-  }
+  tarjetasPokemones(changeOrder(order(pokemonList, 'max-hp')));
+ } else{ 
+  containerPokemons.innerHTML='';
+  return tarjetasPokemones(order(pokemonList, orderBy.value));
+   } }
+  
   )
 
 
@@ -301,3 +301,6 @@ filtro.addEventListener('change', ()=>{
     }
   }
   )
+
+//HU2-HU3
+
