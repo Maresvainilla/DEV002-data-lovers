@@ -124,9 +124,9 @@ const getTypes = (arr) => {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-      <p class=sub>Next evolution:${poks.evolution["next-evolution"][0].name||poks.evolution["prev-evolution"][0].name }</p>
+      
       <p class="sub">Candy:${poks.evolution.candy} </p>
-      <p class="sub">Candy-cost:${poks.evolution["next-evolution"][0]["candy-cost"]||poks.evolution["prev-evolution"][0]["candy-cost"]} </p>
+     
       </div>
     </div>
     <div class="otroModal">
@@ -308,5 +308,6 @@ filtro.addEventListener('change', ()=>{
   }
   )
 
-//HU2-HU3
+
+
 
