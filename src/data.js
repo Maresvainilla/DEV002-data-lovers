@@ -14,7 +14,8 @@ export const filtros = {
 
 
 
-export const order = (arrayObj, orderBy) => {
+
+/*export const order = (arrayObj, orderBy) => {
     let sortObj = [];
     switch (orderBy) {
       case 'max-cp':
@@ -33,5 +34,16 @@ export const order = (arrayObj, orderBy) => {
     }
     return sortObj;
   };
+*/
+export const order=(data,sortBy)=>{
+ 
+  if(sortBy=='num'){
+    return data.sort((a,b)=>a[sortBy] -b[sortBy]);
+  } else
+  return data.sort((a,b)=>a.stats[sortBy] -b.stats[sortBy]);
   
+  
+}
+
+
 export const changeOrder = array => array.reverse();
