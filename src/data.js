@@ -12,8 +12,8 @@ export const filtros = {
 
 
 
-/*
-export const order = (arrayObj, orderBy) => {
+
+/*export const order = (arrayObj, orderBy) => {
     let sortObj = [];
     switch (orderBy) {
       case 'max-cp':

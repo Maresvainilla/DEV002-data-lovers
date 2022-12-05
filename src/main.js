@@ -248,8 +248,8 @@ return modal;
 
 
 //Historia 2
-/*
-orderBy.addEventListener('change', () => {
+
+/*orderBy.addEventListener('change', () => {
   switch (orderBy.value) {
     case 'num':
       containerPokemons.innerHTML = '';
@@ -274,8 +274,8 @@ orderBy.addEventListener('change', () => {
   }
 });
 
-let ordenar=document.getElementById('order-by');*/
-
+let ordenar=document.getElementById('order-by');
+*/
 orderBy.addEventListener('change', ()=>{
  if(orderBy.value=='hpR'){
   containerPokemons.innerHTML='';
