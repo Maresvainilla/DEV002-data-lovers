@@ -84,23 +84,6 @@ document.querySelector('.container-btn-top').addEventListener('click', () => {
 
 
 const mostrarModal=(poks)=>{
-//identificar los elementos
-/*let nombrePokemon= data.pokemon[0].name;
-let imgPokemon=data.pokemon[0].img;
-let numero=data.pokemon[0].num;
-let generacion=data.pokemon[0].generation.num;
-let tipo= data.pokemon[0].type[0];
-let size=data.pokemon[0].size.height;
-let nextEvolucion1=data.pokemon[0].evolution['next-evolution'][0]['name'] ;
-*/
-
-//crear un nodo
-/*
-let evolution1=(datoEvolution)=>{
-  if(datoEvolution=poks.evolution["next-evolution"]){
-    poks.evolution["next-evolution"][0].name
-  } return poks.evolution["prev -evolution"][0].name;
-}*/  
 
 let modal=document.createElement('div');
 
@@ -112,30 +95,7 @@ const getTypes = (arr) => {
   return types;
 };
 
-// const getEvolution= function(evo){
-  
-//   evo= Object.keys(poks.evolution[1]);
 
-//   if(evo=='next-evolution'){
-//     return poks.evolution.next-evolution.name;
-//   }
-//   if (evo=='pre-evolution'){
-
-//     return poks.evolution.pre-evolution.name;
-//   }
-// };
-
-
-
-/*if (${poks.evolution["next-evolution"][0]}){
-  return
-  <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
-}
-else { 
-  return
-  <p class=sub>Next evolution: ${poks.evolution["pre-evolution"][0].name}</p>
-
-}*/
 
  modal.innerHTML=
 `<div class="cuadro">
@@ -171,6 +131,7 @@ else {
      
 modal.className = 'modal'
 // <p class="sub">Candy-cost: ${poks.evolution["next-evolution"][0]["candy-cost"]} </p>
+
 //seleccionar donde se va a poner el nodo - elemento padre
 let elementoPadre=document.querySelector('.container-modal')
 
@@ -178,7 +139,7 @@ let elementoPadre=document.querySelector('.container-modal')
 elementoPadre.appendChild(modal);
 
 
-
+//cerrar modal
 modal.style.display = 'flex';
 modal.querySelector('.cerrar').addEventListener('click', () => {
   modal.classList.remove('modal');
@@ -195,10 +156,7 @@ window.addEventListener('click', (evento) => {
 //empieza modal 2 
 modal.querySelector('.otroModal').addEventListener('click', () => {
   
-
-
-
-  const modal2=document.createElement('div');
+const modal2=document.createElement('div');
 
 const getInfo = (arr) => {
   let ataques = '';
