@@ -1,12 +1,14 @@
+     
 
 export const filtros = {
-    filterData: function(data,condition){
-        
-        return data.filter(elemento=> elemento.type.includes(condition)
+  filterData: function(data,condition){
+   
+      return data.filter(elemento=> elemento.type.includes(condition)
 
-        )
-
-    },
+      )
+     
+  },
+  
 }
 
 
