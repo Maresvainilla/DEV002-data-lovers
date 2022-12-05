@@ -25,7 +25,7 @@ const TypePokemon = (arrayType) => {
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
-  let porcentajes=0;
+ 
   list.forEach((poks) => {  // crear arreglo de los pokemones
     const card = document.createElement('div'); //crear elemento div 
     card.className = 'pokemonCharts';
