@@ -379,12 +379,11 @@ describe('Pruebas para la function changeOrder', () => {
 
     expect(typeof changeOrder).toBe('function');
   });
-  it('La function changeOrder debe retornar un array ordenado descendentemente. ', () => {
+  it('La function changeOrder debe retornar un array ordenado descendentemente. Caso por num. ', () => {
    
-    const resultChangeOrder= changeOrder(inputTest);
+    const resultChangeOrder= changeOrder(order(inputTest,'num'));
     const ResultadoPrueba= [
-      {
-        "num": "006",
+      {"num": "006",
         "name": "charizard",
         "type": [ "fire", "flying" ],
         "stats": {
