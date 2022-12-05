@@ -33,15 +33,11 @@ const inputTest = [
 
 describe('Filtrar por tipo de elemento', () => {
   it('Deberia ser un objeto', () => {
-    expect(typeof filtros).toBe('object');
-  });
-
-  it('Deberia ser un objeto', () => {
-    expect(typeof inputTest).toBe('object');
+    expect(typeof filtros).toBe('function');
   });
 
   it('la funcion filtros devuelve los tipos de pokemon', () => {
-    const resultadoFilter= filtros.filterData (inputTest,'fire')
+    const resultadoFilter= filtros(inputTest,'fire')
     const ResultadoPrueba=   [
     {
       num: 5,

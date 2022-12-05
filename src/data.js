@@ -1,15 +1,14 @@
      
 
-export const filtros = {
-  filterData: function(data,condition){
-   
-      return data.filter(elemento=> elemento.type.includes(condition)
 
-      )
+export const filtros = (data,condition)=>{
+
+   
+      return data.filter(elemento=> elemento.type.includes(condition))
      
-  },
-  
-}
+  }
+
+
 
 
 
@@ -47,3 +46,13 @@ export const order=(data,sortBy)=>{
 
 
 export const changeOrder = array => array.reverse();
+
+
+//porcentaje
+
+export const calculo = (count) =>{
+var porcentaje= ((count/ 251)*100);
+var enteroP= Math.round(porcentaje)
+return enteroP;
+}
+
