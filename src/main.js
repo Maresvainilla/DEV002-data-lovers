@@ -2,7 +2,7 @@
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
-const orderBy = document.querySelector('#order-by');
+/*const orderBy = document.querySelector('#order-by');*/
 
 import {
   filtros,
@@ -290,6 +290,7 @@ return modal;
 
 
 //Historia 2
+/*
 orderBy.addEventListener('change', () => {
   switch (orderBy.value) {
     case 'num':
@@ -314,12 +315,27 @@ orderBy.addEventListener('change', () => {
     default:
   }
 });
+*/
+let ordenar=document.getElementById('order-by');
+
+ordenar.addEventListener('change', ()=>{
+  if(ordenar.value=='num'){
+    containerPokemons.innerHTML='';
+   return  tarjetasPokemones(pokemonList);
+  } else {
+  containerPokemons.innerHTML='';
+  return tarjetasPokemones(order(pokemonList, ordenar.value));
+    }
+  }
+  )
+
 
 //HU3-Filtros
 let filtro= document.getElementById('lista');
 
 filtro.addEventListener('change', ()=>{
   if(filtro.value=='todos'){
+    containerPokemons.innerHTML='';
     tarjetasPokemones(pokemonList);
   } else {
   containerPokemons.innerHTML='';

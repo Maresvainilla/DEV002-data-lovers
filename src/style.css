@@ -61,7 +61,7 @@ letter-spacing: 1.7px;
     align-content: center;
    padding-bottom: 20px;
 }
-
+/*
 .dropdown{
     display: inline-block;
     position: relative;
@@ -122,8 +122,8 @@ li{
     
     align-items: center;
 }
-
-/*-----filtro por tipo-----*/
+*/
+/*-----filtros-----*/
 
 .filtro{
     display: flex;

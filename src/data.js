@@ -12,6 +12,7 @@ export const filtros = {
 
 
 
+/*
 export const order = (arrayObj, orderBy) => {
     let sortObj = [];
     switch (orderBy) {
@@ -31,5 +32,13 @@ export const order = (arrayObj, orderBy) => {
     }
     return sortObj;
   };
+*/
+export const order=(data,sortBy)=>{
+ 
+  return data.sort((a,b)=>a.stats[sortBy] -b.stats[sortBy]);
   
+  
+}
+
+
 export const changeOrder = array => array.reverse();
