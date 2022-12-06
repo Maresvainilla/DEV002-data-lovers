@@ -1,0 +1,637 @@
+body{
+    margin:0 0;
+}
+
+header{
+    margin: 0 0;
+    background-color: #021E42;
+    /* para que header no se mueva con el scroll*/
+    position: fixed;
+    width: 100%;
+    min-width: 300px;
+    z-index: 3;
+}
+div, h1, p{
+    margin:0 0;
+}
+
+div.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 5vw;
+padding-right: 5vw;
+}
+.logo h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: initial;
+font-size: 33px;
+color:aliceblue;
+padding: 5px 10px;
+letter-spacing: 1.7px;
+
+}
+
+.logo h1 span{
+    color: hsl(0, 72%, 50%);
+   
+}
+
+.logo input{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 6px;
+    width: 60px;
+    height: 33px;
+    border-radius: 20px;
+    
+}
+.logo input::-webkit-input-placeholder{
+    color:transparent
+}
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+   padding-bottom: 20px;
+}
+
+
+.filtro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    min-width: 49%;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
+    
+}
+label{
+    color: #FFFFFF;
+    padding-left: 13px;
+    padding-right:5px;
+}
+.list1{
+    background-color: #FFFFFF;
+    width: 50%;
+    font-family:   Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    min-height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    
+}
+
+select {
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
+    border-radius: 20px;
+    border-color:#021E42;
+}
+
+/* ------------recuadro decontador de pokemones--------*/
+
+.CARDSSPACE{
+    position:absolute;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.pokemones-quantity{ 
+   
+    display: flex;
+    width: 100vw;
+    padding: 0em 1em;
+    justify-content: space-between;
+    min-width: 270px;
+    background-color: #f2f398;
+    /*padding-left: 5vw;*/
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #656565;
+    font-size: 1.2em;
+ 
+}
+.pokemones{  /*letra del contador */
+    font-weight: bold;
+    
+}
+.pokemonesp{  /*letra del contador */
+    font-weight: bold;
+   padding-right: 30px;
+    
+}
+
+
+/*-------tarjetas-------------*/
+
+#container-card{/**CUADRO DE LA TAREJTE */
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    max-width: 100%;
+    padding: 1em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f2f398;
+ 
+   
+}
+.pokemonCharts{   /*CUADRO DE LA TAREJTE */
+   
+    background-color: #f9f9fa;
+    padding: 1em;
+    margin: 1em;
+    height: 214px;
+    width:278px;  
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.RedSquare{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+      
+    margin: 0;
+    padding: 0;
+    height: 194px;
+    width: 251px;   
+    border: solid 5px #ec3737;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+        border-radius: 40px; 
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.num-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.poke-num{      /*como aparece el numero de ok en tarjeta */
+    
+    font-size: 1.2em;
+    color: #656565;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.TypesPoke{
+    margin-right: 15px;
+}
+
+.TypesPoke img{
+    width: 2.5em;
+   
+}
+
+.poke-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+.container-info {   /*contenedor de la info  de la tarjeta del lado derecho*/
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+   
+    
+}
+
+.poke-name {     /*COMO luce el nombre el pokemon */
+    
+    background-color:  #1c2166;  /*recuadro del nombre  */
+    border-radius: 0.4em;   /*propiedad para hacer redondo el borde  */ 
+    font-size: 1.1em;
+    color: rgb(228, 231, 240);
+    width: 80%;
+    height: 1.5em;
+    font-weight: bold;    
+    
+}
+
+/* -------flecha---------------*/
+
+.container-btn-top {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: -83;
+    cursor: pointer;
+}
+
+.btn-top {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s;
+}
+
+.show {
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.show .btn-top {
+    animation: popup .1s ease-in-out;
+    width: 3em;
+    height: auto;
+    color: #ffffff;
+    z-index: 11;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* ---------------Estilos del Modal -------------- */
+
+/*-----General-----*/
+.modal{
+	position: fixed;
+    background: rgba(0, 0, 0, 0.452);
+	
+    margin: 0;
+    width: 100%;  
+    height: 100vh;  
+    z-index: 350;
+    top: 100px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+	/*animation-name: modal;
+    animation-duration: 0.5s;*/
+
+}
+
+.cuadro{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    z-index: 390;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.modal-flex{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    z-index: 380;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+.cerrar{
+    display: flex;
+    position: absolute;
+    
+    right: 10px;
+    color: aliceblue;
+    cursor: pointer;
+   
+}
+
+
+/*-----Modal 1-----*/
+
+/*--elementos--*/
+.head-modal{
+    position: absolute;
+    margin:0;
+    top:0;
+    background-color: #021E42;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nombre{
+    color: aliceblue;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.imagen{
+    border: 2px solid hsl(0, 72%, 50%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    height: 100px;
+}
+
+.info{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 50%;
+}
+
+
+.evolucion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:57%;  
+    width: 100%;
+}
+
+.sub{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.titulo{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0%;
+    margin-bottom: 5px;
+    top:0;
+    border-radius: 20px;
+    font-size:small;
+    background-color: #021E42;
+    color: aliceblue;
+    width: 70%;
+    height: 40px;
+    left:10%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.evo1{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 100%;
+    
+    
+    list-style-type: none;
+    text-transform: capitalize;
+    
+}
+
+
+/*--Ir a modal 2- Otro modal--*/
+.flecha{
+    color: #FFFFFF;
+       
+}
+.otroModal{
+    background-color: #054ba7;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     cursor: pointer;
+     position: absolute;
+     right: 5px;
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 58%;
+    }
+
+
+/*------Modal 2-----*/
+
+/*--General--*/
+.modal2{
+    position: absolute;
+    display: none;
+
+}
+
+/*--Elementos--*/
+.debilidades{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:15%;  
+    width: 50%;
+
+    text-align: initial;
+
+    left: 0;
+    
+}
+
+.titulo1{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0%;
+    
+    top:0;
+    border-radius: 20px;
+    background-color: #021E42;
+    font-size:small;
+    color: aliceblue;
+    width: 80%;
+    height: 40px;
+    left:10%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+
+.resistencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:15%;  
+    width: 50%;
+    text-align: initial;
+     
+    left: 50%;  
+}
+
+.debi{
+
+    position: absolute;
+    top:6px;
+    left: 16px;;   
+}
+
+.lista{
+    list-style-type: none;
+    text-transform: capitalize;
+    position: relative;
+    top:35px; 
+    padding-top: 0;
+    padding-bottom: 3px;
+    left:10px;
+    margin-top: 0;
+  border: 1px solid hsl(0, 72%, 50%);
+}
+
+
+
+.ataques{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 57%;
+    left: 20px;
+    width: 100%;
+    text-align: initial;
+    
+}
+
+.desc{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+}
+.nombreA{
+    position: absolute;
+    top:20px;
+    left:0;
+}
+.typeA{
+    position: absolute;
+    top:20px;
+    left:45%;
+}
+/*--RegresarModal--*/
+.anteriorModal{
+    background-color: #054ba7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+     cursor: pointer;
+     position: absolute;
+     top: 58%;
+     left: 5px;
+    z-index: 450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+@media(min-width:490px) {
+
+    div.logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+ }
+   .pokemones-quantity{
+    padding-left: 10vw;
+   }
+   .pokemonesp{
+    padding-right: 13vw;
+   }
+    .logo h1{
+        font-size: 40px;
+        
+        
+    } 
+    .logo input {
+        width: 30vw;
+        height: 38px;
+        max-width: 180px;
+
+    }
+    .logo input::-webkit-input-placeholder{
+        color:#465B75;
+    }
+    
+    .CARDSSPACE{
+        position:absolute;
+        margin-top: 170px;
+    }
+}
+
+@media(min-width:800px) {
+
+    .logo h1{
+        font-size: 70px;
+}
+
+.CARDSSPACE{
+    position:absolute;
+    margin-top: 210px;
+}
+.pokemonesp{
+    padding-right: 15vw;
+   }
+}

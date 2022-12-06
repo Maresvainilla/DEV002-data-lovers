@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!---<div id="root"></div>--->
+    <header>
+        <div class="container">
+          <div class="logo">
+            <h1>POKEDEX <span>GO</span></h1>
+            <input type="search" id="buscar" class="buscar-pokemon" placeholder="Buscar pokémon" autocomplete="off" spellcheck="false" />
+          </div>
+                    <div class="filtros">
+                      <div class="dropdown1">
+                        <div class="dropdown-content1">
+                          <div class="filtro">
+                            <label for="order-by"> Order</label>
+                            <select id="order-by" class="list1">
+                              <option value="num">Num</option>
+                              <option value="max-cp">CP min-máx</option>
+                          <!--   <option value="cpR">CP máx-min</option>--> 
+                              <option value="max-hp">HP min -máx</option>
+                          <!----->    <option value="hpR">HP máx-min</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown1">
+                        <div class="dropdown-content1">
+                          <div class="filtro">
+                          <label   for="lista">Type </label>
+                          <select class="list1" id="lista"> 
+                              <option value="todos">Todos</option>
+                              <option value="bug">Bug</option>
+                              <option value="dark">Dark</option>
+                              <option value="dragon">Dragon</option>
+                              <option value="electric">Electric</option>
+                              <option value="fairy">Fairy</option>
+                              <option value="fighting">Fighting</option>
+                              <option value="fire">Fire</option>
+                              <option value="ghost">Ghost</option>
+                              <option value="grass">Grass</option>
+                              <option value="ground">Ground</option>
+                              <option value="ice">Ice</option>
+                              <option value="normal">Normal</option>
+                              <option value="poison">Poison</option>
+                              <option value="psychic">Psychic</option>
+                              <option value="rock">Rock</option>
+                              <option value="steel">Steel</option>
+                              <option value="water">Water</option>
+                          </select>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+            <div class="pokemones-quantity">
+              <p class="pokemones">Pokemones ( <spam id="quantity"></spam> )</p>
+              <p class="pokemonesp">PORCENTAJE: ( <spam id="calculoP"></spam> %)</p>
+
+            </div>
+        </div>
+      </header>
+  <main>
+  <div class="CARDSSPACE">
+    
+    <div id="container-card"></div>
+  
+    <div class="container-modal"></div>
+    <div class="container-btn-top">
+      <img src="imagenes/arrowtop2.png" class="btn-top">
+    </div>
+  </div>      
+  </main>
+
+
+
+
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
