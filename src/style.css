@@ -61,69 +61,7 @@ letter-spacing: 1.7px;
     align-content: center;
    padding-bottom: 20px;
 }
-/*
-.dropdown{
-    display: inline-block;
-    position: relative;
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    overflow: auto;
-    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
-    
-    background-color: #FFFDFD;
-    border: 3px;
-     width: 90px;
-     border-color: #4081db;
 
-     border-radius: 16px;
-}
-
-button{
-    font-size: 15px;
-    font-weight: bold;
-    color: aliceblue;
-    text-align: center;
-    border-color: aliceblue;
-    background-color: #021E42;
-    border-radius: 16px;
-    min-height: 34px;
-    min-width: 90px;
-    cursor: pointer;
-}
-
-.dropdown:hover .dropdown-content{
-    display:block;
-    
-}
-
-ul{
-    list-style: none;
-    text-align: initial;
-    padding: 0;
-}
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 7px 5px;
-   }
-.dropdown-content li:hover{
-    background-color:#A3BCE0;
-    color: rgb(78, 78, 78);
-    cursor: pointer;
- 
-}
-
-.tipo{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    
-    align-items: center;
-}
-*/
-/*-----filtros-----*/
 
 .filtro{
     display: flex;
@@ -172,13 +110,13 @@ select {
 
 .pokemones-quantity{ 
    
-   display: flex;
+    display: flex;
     width: 100vw;
     padding: 0em 1em;
     justify-content: space-between;
     min-width: 270px;
     background-color: #f2f398;
-    padding-left: 5vw;
+    /*padding-left: 5vw;*/
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -188,6 +126,11 @@ select {
 }
 .pokemones{  /*letra del contador */
     font-weight: bold;
+    
+}
+.pokemonesp{  /*letra del contador */
+    font-weight: bold;
+   padding-right: 30px;
     
 }
 
@@ -654,6 +597,9 @@ select {
    .pokemones-quantity{
     padding-left: 10vw;
    }
+   .pokemonesp{
+    padding-right: 13vw;
+   }
     .logo h1{
         font-size: 40px;
         
@@ -685,5 +631,7 @@ select {
     position:absolute;
     margin-top: 210px;
 }
-
+.pokemonesp{
+    padding-right: 15vw;
+   }
 }

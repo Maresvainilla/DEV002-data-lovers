@@ -1,5 +1,6 @@
 import {
-  filtros
+  filtros,
+  calculo
 
 } from '../src/data.js';
 const inputTest = [
@@ -457,3 +458,20 @@ describe('Pruebas para la function changeOrder', () => {
     expect(resultChangeOrder).toEqual(ResultadoPrueba);
   });
 });
+
+
+
+describe('Pruebas para la function calculo. ', () => {
+  it('Calculo debería ser una function', () => {
+
+    expect(typeof calculo).toBe('function');
+  })
+  it ('La function calculo devuleve un porcentaje de la data.', () => { 
+    let contador =  inputTest.length;
+     expect(calculo(contador)).toBe(2)
+   
+    });
+
+ 
+});
+
