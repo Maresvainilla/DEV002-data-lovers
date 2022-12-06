@@ -1,4 +1,4 @@
-//import pokemon from './data/pokemon/pokemon.js';
+
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
@@ -8,6 +8,7 @@ import {
   filtros,
   order,
   /**/changeOrder,
+  calculo
 } from './data.js';
 
 //-----------------------------------------------------
@@ -24,6 +25,7 @@ const TypePokemon = (arrayType) => {
 
  const tarjetasPokemones = (list) => { //crear un metodo que mueve la info del objeto que son los pokemones o la lista de ellos 
   let count = 0; //contar las tarjetas
+ 
   list.forEach((poks) => {  // crear arreglo de los pokemones
     const card = document.createElement('div'); //crear elemento div 
     card.className = 'pokemonCharts';
@@ -53,14 +55,18 @@ const TypePokemon = (arrayType) => {
 
     count += 1;
     containerPokemons.appendChild(card);
+    console.log(count)
+    console.log(calculo(count))
+  
   });
   document.getElementById('quantity').innerHTML = count;
+  document.getElementById('calculoP').innerHTML = calculo(count);
   return containerPokemons;
 };
 
 tarjetasPokemones(pokemonList); //usar el metodo con la data 
 
-
+// porcentajes 
 
 
 
