@@ -303,5 +303,3 @@ filtro.addEventListener('change', ()=>{
   )
 
 
-
-
