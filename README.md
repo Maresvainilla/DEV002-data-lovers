@@ -10,14 +10,12 @@
 * [5. Diseño de la Interfaz de Usuario](#5-Diseño-de-la-Interfaz-de-Usuario)
 * [6. Pruebas unitarias](#6-Pruebas-unitarias)
 * [7. Resultado final](#7-Resultado-final)
-* [8. Checklist](#8-checklist)
+
 
 ***
 
 
-
-
-## 1. Definicion del producto
+## 1. Definición del producto
 
 En este proyecto se construyó una pagina web para visualizar un conjunto de datos de Pokémon, con el objetivo de dar respuesta a las necesidades de los usuarios de obtener estos datos. 
 
@@ -39,12 +37,10 @@ En esta estapa realizamos todas las cosas que un usuario como maestro pokemon, c
 ![](src/imagenes/ETAPA1hu.png)
 
 
-
 Etapa 2 Eleccion.
 En la etapa 2 se tomaron decisiones de las mejores historias de usuario o las más adecuadas para nuestro proyecto y quedaron de la siguiente forma:
 
 ![](src/imagenes/etapa2.png)
-
 
 
 Etapa 3 FeedBack
@@ -52,10 +48,6 @@ Etapa 3 FeedBack
 En esta etapa se pidio Feedback a un asesor donde nos oriento en la mejora y definición de las historias de una manera mas clara y puntual.
 
 ![](src/imagenes/etapa3.png)
-
-
-
-
 
 
 ## 5. Diseño de la Interfaz de Usuario
@@ -91,8 +83,7 @@ Prototipo de baja fidelidad para PC:
 
 #### Prototipo de alta fidelidad
 
-En este apartado se encuentran los bocetos de alta fidelidad que seria lo ideal para nuestra página, siguiendo los fundamentos de visual design. Se muestran las diferentes pantallas de como se percibiría cada botón e interacción, además se incluye el link de
-Figma ya que el trabajo cuenta con un prototipo interactivo de como reaccionan los botones al darles click.
+En este apartado se encuentran los bocetos de alta fidelidad que seria lo ideal para nuestra página, siguiendo los fundamentos de visual design. Se muestran las diferentes pantallas de como se percibiría cada botón e interacción, además se incluye el link de Figma ya que el trabajo cuenta con un prototipo interactivo de como reaccionan los botones al darles click.
 
 En las siguientes imágenes se muestran los prototipos de alta fidelidad.
 
@@ -111,11 +102,12 @@ Link de figma: https://www.figma.com/file/NOEtt91nIOqkos7V5Ylym8/PROTOTIPO--ALTA
 ## 6. Pruebas unitarias
 En este apartado mostramos las pruebas unitaras del proyecto.
 
+![](src/imagenes/PruebasUnitarias.png)
 
 ## 7. Resultado final 
 
+![](src/imagenes/PaginaPokemon.png)
 
 
-## 8. Pistas, tips y lecturas complementarias
 
 
