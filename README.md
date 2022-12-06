@@ -106,7 +106,7 @@ En este apartado mostramos las pruebas unitaras del proyecto.
 
 ## 7. Resultado final 
 
-![](src/imagenes/PaginaPokemon.png)
+![](src/imagenes/PaginaPokemon.PNG)
 
 
 
