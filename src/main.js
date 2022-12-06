@@ -55,8 +55,7 @@ const TypePokemon = (arrayType) => {
 
     count += 1;
     containerPokemons.appendChild(card);
-    console.log(count)
-    console.log(calculo(count))
+
   
   });
   document.getElementById('quantity').innerHTML = count;

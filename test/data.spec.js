@@ -461,12 +461,12 @@ describe('Pruebas para la function changeOrder', () => {
 
 
 
-describe('función calculo  ', () => {
+describe('Pruebas para la function calculo. ', () => {
   it('Calculo debería ser una function', () => {
 
     expect(typeof calculo).toBe('function');
   })
-  it ('devueve porcentaje de inputTEST', () => { 
+  it ('La function calculo devuleve un porcentaje de la data.', () => { 
     let contador =  inputTest.length;
      expect(calculo(contador)).toBe(2)
    
